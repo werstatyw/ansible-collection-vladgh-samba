@@ -32,7 +32,7 @@
           # groups: A comma separated string of groups, i.e.:
           # groups: users,wheel
           groups: users
-          #cron_allow: yes
+          cron_allow: yes
           #sudo_options: "ALL=(ALL) NOPASSWD: ALL"
           # Adding an authorized key.
           authorized_keys:
