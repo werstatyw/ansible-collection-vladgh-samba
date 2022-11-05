@@ -1,11 +1,12 @@
 ---
 users:
-  - username: john
-    password: $6$/y5RGZnFaD3f$96xVdOAnldEtSxivDY02h.DwPTrJgGQl8/MTRRrFAwKTYbFymeKH/1Rxd3k.RQfpgebM6amLK3xAaycybdc.60
-    update_password: on_create
-    comment: John Smith
-    groups: Group1
-    shell: /bin/bash
-    use_sudo: no
-    use_sudo_nopass: no
+  - username: testuser102
+    password: $6$F/KXFzMa$ZIDqtYtM6sOC3UmRntVsTcy1rnsvw.6tBquOhX7Sb26jxskXpve8l6DYsQyI1FT8N5I5cL0YkzW7bLbSCMtUw1
+    update_password: always
+    comment: Test User 101
+    groups: testcommon, testgroup102web
+    shell: /bin/sh
+    use_sudo: yes
     user_state: present
+    servers:
+      - webserver
