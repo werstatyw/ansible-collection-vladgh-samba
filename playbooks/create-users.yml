@@ -1,0 +1,7 @@
+---
+- hosts: all
+  vars_files:
+    - userlist
+  become: yes
+  roles:
+  - ryandaniels.create_users
