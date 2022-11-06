@@ -30,5 +30,5 @@
       setype: public_content_t
       browseable: 'yes'
   roles:
-    - ./roles/server
+    - ansible-collection-vladgh-samba
   
