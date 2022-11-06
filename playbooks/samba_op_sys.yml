@@ -19,8 +19,8 @@
     samba_shares:
     - name: share_group1
       comment: 'a share specific to group1'
-      group: Group1
-      valid_users: +Group1
+      group: group1
+      valid_users: +group1
       browseable: 'no'
     - name: public_share
       comment: 'a public share'
