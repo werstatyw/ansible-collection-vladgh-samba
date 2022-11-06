@@ -30,6 +30,5 @@
       setype: public_content_t
       browseable: 'yes'
   roles:
-    - role: vladgh.samba.server
-
+    - ./roles/server
   
