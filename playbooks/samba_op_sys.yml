@@ -16,6 +16,7 @@
         - psst
         - tsst
   vars:
+    samba_load_printers: true
     samba_shares:
     - name: share_group1
       comment: 'a share specific to group1'
