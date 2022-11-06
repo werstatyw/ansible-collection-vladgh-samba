@@ -1,0 +1,35 @@
+---
+- name: Common
+  hosts: all
+  become: yes
+  pre_tasks:
+    - name: Add test users
+      ansible.builtin.user:
+        name: "{{ item }}"
+        groups: users
+        append: true
+      with_items:
+        - john
+        - john2
+        - johnp
+        - gordon
+        - psst
+        - tsst
+  vars:
+    samba_shares:
+    - name: share_group1
+      comment: 'a share specific to group1'
+      group: Group1
+      valid_users: +Group1
+      browseable: 'no'
+    - name: public_share
+      comment: 'a public share'
+      public: 'yes'
+      write_list: +users
+      group: users
+      setype: public_content_t
+      browseable: 'yes'
+  roles:
+    - role: vladgh.samba.server
+
+  
