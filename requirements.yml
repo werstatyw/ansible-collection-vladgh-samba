@@ -1,4 +1,1 @@
-collections:
-  - name: https://github.com/werstatyw/ansible-collection-vladgh-samba
-    version: main
-    type: git
+  - src: https://github.com/werstatyw/ansible-collection-vladgh-samba
