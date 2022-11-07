@@ -10,8 +10,8 @@
         append: true
       with_items:
         - john
-        - john2
         - johnp
+        - johnk
         - gordon
         - psst
         - tsst
